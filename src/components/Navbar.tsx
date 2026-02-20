@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="w-8 h-8 bg-coral rounded-full flex items-center justify-center">
           <div className="w-4 h-4 bg-ocean-dark rounded-full" />
         </div>
-        <span className="font-serif text-2xl font-bold tracking-tight">DeepBlue</span>
+        <span className="font-serif text-2xl font-bold tracking-tight">DiveDiaryAcademy</span>
       </div>
 
       {/* Desktop Links */}
@@ -44,7 +44,7 @@ export default function Navbar() {
 
       {/* CTA Button */}
       <div className="hidden md:block">
-        <button 
+        <button
           onClick={handleBookNow}
           className="bg-gold text-ocean-dark px-6 py-2 rounded-full font-semibold hover:bg-white transition-colors"
         >
@@ -53,7 +53,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Button */}
-      <button 
+      <button
         className="md:hidden text-sand"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -62,7 +62,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-20 left-6 right-6 bg-ocean-light p-6 rounded-2xl md:hidden flex flex-col gap-4 shadow-xl"
@@ -77,7 +77,7 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <button 
+          <button
             onClick={handleBookNow}
             className="bg-gold text-ocean-dark px-6 py-3 rounded-xl font-bold w-full"
           >

@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowUpRight, Anchor, Waves, Fish } from 'lucide-react';
-import heroVideo from './assets/hero.mp4';
+import heroVideo from './assets/hero2.mp4';
 
 export default function Hero() {
   return (
@@ -69,7 +69,7 @@ export default function Hero() {
             className="flex items-center gap-4 opacity-40 hover:opacity-100 transition-opacity cursor-default"
           >
             <div className="h-px w-12 bg-white" />
-            <span className="text-xs uppercase tracking-[0.4em] font-medium font-sans">AIDA Certified School</span>
+            <span className="text-xs uppercase tracking-[0.4em] font-medium font-sans">Dive Diary Academy</span>
           </motion.div>
         </div>
 
@@ -96,7 +96,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.7 }}
             className="text-lg lg:text-xl text-white/80 max-w-sm ml-auto mb-12 font-light leading-relaxed"
           >
-            Join the leading AIDA International certified freediving school.
+            Join Dive Diary Academy, the leading AIDA International certified freediving school.
             Master your breath, explore the deep, and discover a new world.
           </motion.p>
 

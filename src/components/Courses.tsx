@@ -129,10 +129,10 @@ export default function Courses() {
   return (
     <section className="py-24 bg-white relative overflow-hidden" id="courses">
       <div className="container mx-auto px-6 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -140,7 +140,7 @@ export default function Courses() {
           >
             Start Your Journey
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -172,7 +172,7 @@ export default function Courses() {
                 <h3 className="font-serif text-2xl text-ocean-dark mb-1">{course.title}</h3>
                 <p className="text-ocean-light font-medium text-sm">{course.subtitle}</p>
               </div>
-              
+
               <p className="text-gray-500 mb-8 text-sm leading-relaxed min-h-[60px]">
                 {course.description}
               </p>
@@ -217,7 +217,7 @@ export default function Courses() {
               <div className="absolute top-0 right-0 p-8 opacity-10">
                 <req.icon size={100} />
               </div>
-              
+
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="bg-white/10 p-3 rounded-xl">
@@ -225,7 +225,7 @@ export default function Courses() {
                   </div>
                   <h3 className="font-serif text-2xl">{req.title}</h3>
                 </div>
-                
+
                 <ul className="space-y-4">
                   {req.items.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-sand/90">
@@ -240,7 +240,7 @@ export default function Courses() {
         </div>
 
         {/* Pool Fees Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -253,7 +253,7 @@ export default function Courses() {
             <div>
               <h3 className="font-serif text-2xl text-ocean-dark mb-2">Pool Facility Fees</h3>
               <p className="text-gray-500">
-                For certification courses, pool entry tickets are <strong>not included</strong> in the course price. 
+                For certification courses, pool entry tickets are <strong>not included</strong> in the course price.
                 <br />
                 <span className="text-sm italic text-coral">*Trial sessions include pool entry.</span>
               </p>
