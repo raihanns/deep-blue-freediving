@@ -10,9 +10,9 @@ export default function CoachProfile() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Image Column - Inspired by the central visual in the screenshot */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -20,24 +20,24 @@ export default function CoachProfile() {
             className="lg:col-span-5 relative"
           >
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[3/4] group">
-              <img 
-                src="https://images.unsplash.com/photo-1594716871343-229294541766?q=80&w=1974&auto=format&fit=crop" 
-                alt="Head Coach Portrait" 
+              <img
+                src="./src/components/assets/instructor.webp"
+                alt="Jenifer - DDA Founder & Freediving Instructor"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              
+
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-ocean-dark/60 via-transparent to-transparent opacity-60" />
-              
+
               {/* Name Overlay on Image (Mobile/Tablet style) */}
               <div className="absolute bottom-8 left-8 text-white">
-                <p className="font-serif text-3xl font-bold">Sarah Jenkins</p>
-                <p className="text-white/80 text-sm tracking-wider uppercase mt-1">Head Instructor</p>
+                <p className="font-serif text-3xl font-bold">Jenifer</p>
+                <p className="text-white/80 text-sm tracking-wider uppercase mt-1">DDA Founder & Freediving Instructor</p>
               </div>
             </div>
 
             {/* Decorative floating element */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -63,9 +63,9 @@ export default function CoachProfile() {
                 Mastering the Art of <br />
                 <span className="italic text-ocean-light">Breath & Mind</span>
               </h2>
-              
+
               <p className="text-gray-600 text-lg leading-relaxed mb-8 font-light">
-                With over a decade of experience exploring the depths, Sarah has dedicated her life to sharing the transformative power of freediving. As an AIDA Instructor Trainer and former national record holder, she combines technical precision with a holistic approach to relaxation and mental fortitude.
+                With over a decade of experience exploring the depths, Jenifer has dedicated her life to sharing the transformative power of freediving. As the DDA Founder and a certified Freediving Instructor, she combines technical precision with a holistic approach to relaxation and mental fortitude.
               </p>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-12 font-light">
